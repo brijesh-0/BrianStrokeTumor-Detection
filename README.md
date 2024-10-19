@@ -101,8 +101,8 @@ This project is a comprehensive and efficient Brain Stroke and Tumor Detection S
   <summary><b>U-Net Architecture</b></summary> 
     <p>Data Distribution:</p>
     <img src="stats_images/distrU-net.png" alt="drawing" width="500"/>
-
-    Accuracy Graph:
+    
+    <p>Accuracy Graph:</p>
     <img src="stats_images/accuracyU-net.png" alt="drawing" width="500"/>
 
     Predicted VS Original Segmentation:
@@ -111,7 +111,7 @@ This project is a comprehensive and efficient Brain Stroke and Tumor Detection S
 
 ## Contact
 ### Authors
-Your name and contact information
+
 ## Acknowledgments
 Acknowledgments for datasets, inspiration, or other forms of assistance
 
