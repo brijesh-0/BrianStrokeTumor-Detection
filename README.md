@@ -69,24 +69,24 @@ Illustrative examples of using your project
 - Specificity
   
 ### Best Models Results
-## Multi-Layer Perceptron (MLP)
+### Multi-Layer Perceptron (MLP):
 - Accuracy: 94.67%
 - Precision: 0.91
 - F1 Score: 0.95
 - Validation Loss: 0.0136
   
-## CNN Architecture 
+### CNN Architecture:
 - Accuracy: 98.1%
 - Test Loss: 0.627
   
-## U-Net Architecture 
+### U-Net Architecture: 
 - Precision: 99.4%
 - Specificity: 99.79%
 - Sensitivity: 99.04%
   
 ## Model Evaluation and Visualizations
 ### Confusion Matrix
-
+![]()
 ### Precision-Recall Curve
 Visual representation of the precision-recall curve
 
