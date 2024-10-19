@@ -29,26 +29,12 @@ This project is a comprehensive and efficient Brain Stroke and Tumor Detection S
 - **Predictive Analysis:** Provides predictions on stroke likelihood based on user-input features, aiding in early diagnosis.
 - **Tumor Feature Identification:** Helps in identifying specific tumor characteristics, which can guide treatment decisions.
   
-Technologies used - 
+**Technologies used -** 
  - Frontend: HTML, CSS, JavaScript
  - Backend: Python, Flask
  - Machine Learning: NumPy, Pandas, scikit-learn, TensorFlow or Keras
  - Deep Learning: Convolutional Neural Networks (CNN), U-Net architecture, Multi-Layer Perceptron (MLP)
  - Data Visualization: Matplotlib 
-
-## Getting Started
-### Installation
-Step-by-step installation instructions
-### Setup
-Any additional setup required (e.g., environment variables)
-
-## Usage
-### Training
-Instructions for training the model
-### Prediction
-Instructions for making predictions with the trained model
-### Example Use Cases
-Illustrative examples of using your project
 
 ## Dataset
 ### Source
@@ -85,15 +71,17 @@ Illustrative examples of using your project
 - Sensitivity: 99.04%
   
 ## Model Evaluation and Visualizations
-### Multi-Layer Perceptron (MLP) - 
-### Confusion Matrix
-<img src="stats_images/confusion_matrix.png" alt="drawing" width="500"/>
+<details>
+  <summary>Multi-Layer Perceptron (MLP) - </summary>
+  <b>Confusion Matrix:</b>
+  <img src="stats_images/confusion_matrix.png" alt="drawing" width="500"/>
 
-### Precision-Recall Curve
-<img src="stats_images/precision_recall.png" alt="drawing" width="500"/>
+  <b>Precision-Recall Curve:</b>
+  <img src="stats_images/precision_recall.png" alt="drawing" width="500"/>
 
-### ROC-AUC Curve:
-<img src="stats_images/ROC-AUC.png" alt="drawing" width="500"/>
+  <b>ROC-AUC Curve:</b>
+  <img src="stats_images/ROC-AUC.png" alt="drawing" width="500"/>
+</details>
 
 ### CNN Architecture -
 ### Data Distribution
