@@ -55,36 +55,38 @@ Illustrative examples of using your project
 - <a href="https://www.kaggle.com/code/alphajr7/95-accuracy/input?select=brains_Stroke_final+-+brains_Stroke_final.csv" target="_blank">Brain Stroke Dataset</a>
 - <a href="https://www.kaggle.com/datasets/noshintasnia/brain-stroke-prediction-ct-scan-image-dataset/data" target="_blank">CT Scan Image Dataset</a>
 - <a href="https://www.kaggle.com/datasets/awsaf49/brats2020-training-data" target="_blank">BRATS 2020 Training Data</a>
-  
-### Features of the MLP Dataset
-- Gender: This feature may influence stroke risk factors and outcomes.
-- Age: Age is a significant risk factor for strokes, with older individuals generally at higher risk.
-- Hypertension: Indicates whether the individual has high blood pressure (yes/no). Hypertension is a well-known risk factor for stroke.
-- Heart Disease: Indicates the presence of any heart disease (yes/no). Heart conditions can increase the likelihood of a stroke.
-- Ever Married: This feature may reflect social support systems that could influence health outcomes.
-- Work Type: Categorizes the individual’s type of occupation. Different work types may have varying health risks and stress levels.
-- Residence Type: Describes whether the individual lives in an urban or rural area. This may affect access to healthcare and lifestyle factors.
-- Avg Glucose Level: The average blood glucose level of the individual, measured in mg/dL. Elevated glucose levels can be a risk factor for both strokes and diabetes.
-- BMI (Body Mass Index): BMI is an important indicator of obesity, which is a risk factor for stroke.
-- Smoking Status: Indicates the individual's smoking behavior (e.g., never smoked, former smoker, current smoker). Smoking is a significant risk factor for stroke.
-
-### Target Variable of the MLP Dataset
-- Yes: Likely to suffer a Brain Stroke (1)
-- No: Not likely to suffer a Brain Stroke (0)
-
-### Target Variable of the CNN Dataset
-- Hemorrhagic: 
-- Ischemic:  
-
+ 
 ## Model Performance
 ### Evaluation Metrics
-List of metrics used to evaluate the model (e.g., accuracy, precision, recall, F1-score, ROC-AUC)
-### Best Model Results
-Results of the best-performing model
-
+- Accuracy
+- Precision
+- Recall
+- Confusion Matrix
+- F1-score
+- ROC-AUC
+- Validation Loss
+- Sensitivity
+- Specificity
+  
+### Best Models Results
+## Multi-Layer Perceptron (MLP)
+- Accuracy: 94.67%
+- Precision: 0.91
+- F1 Score: 0.95
+- Validation Loss: 0.0136
+  
+## CNN Architecture 
+- Accuracy: 98.1%
+- Test Loss: 0.627
+  
+## U-Net Architecture 
+- Precision: 99.4%
+- Specificity: 99.79%
+- Sensitivity: 99.04%
+  
 ## Model Evaluation and Visualizations
 ### Confusion Matrix
-Visual representation of the confusion matrix
+
 ### Precision-Recall Curve
 Visual representation of the precision-recall curve
 
