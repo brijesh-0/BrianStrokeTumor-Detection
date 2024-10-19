@@ -63,10 +63,11 @@ This project is a comprehensive and efficient Brain Stroke and Tumor Detection S
 - Validation Loss: 0.0136
   
 **CNN Architecture:**
-- Accuracy: 98.1%
+- Test Accuracy: 98.1%
 - Test Loss: 0.627
   
 **U-Net Architecture:**
+- Test Accuracy: 99.26%
 - Precision: 99.4%
 - Specificity: 99.79%
 - Sensitivity: 99.04%
