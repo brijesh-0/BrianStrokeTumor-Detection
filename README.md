@@ -15,7 +15,7 @@ This project is a comprehensive and efficient Brain Stroke and Tumor Detection S
 - **Classification of Brain Stroke:** Implements a Convolutional Neural Network (CNN) to analyze MRI/CT images and classify brain strokes as either **ischemic** or **hemorrhagic**.
   
 ### Brain Tumor Detection and Segmentation 
-- U-Net Model for Segmentation: Employs a U-Net architecture to segment brain tumors in medical images. This model is specifically trained to identify and classify the following features:
+- **U-Net Model for Segmentation:** Employs a U-Net architecture to segment brain tumors in medical images. This model is specifically trained to identify and classify the following features:
     - **No Tumor:** Indicates the absence of any tumor.
     - **Necrotic/Core:** Represents dead or dying tissue within a tumor, suggesting advanced tumor progression.
     - **Edema:** Detects swelling caused by excess fluid around the tumor, which can indicate the tumor's impact on surrounding brain tissue.
@@ -37,7 +37,7 @@ This project is a comprehensive and efficient Brain Stroke and Tumor Detection S
  - Data Visualization: Matplotlib 
 
 ## Dataset
-### Source
+### Sources
 - <a href="https://www.kaggle.com/code/alphajr7/95-accuracy/input?select=brains_Stroke_final+-+brains_Stroke_final.csv" target="_blank">Brain Stroke Dataset</a>
 - <a href="https://www.kaggle.com/datasets/noshintasnia/brain-stroke-prediction-ct-scan-image-dataset/data" target="_blank">CT Scan Image Dataset</a>
 - <a href="https://www.kaggle.com/datasets/awsaf49/brats2020-training-data" target="_blank">BRATS 2020 Training Data</a>
@@ -87,52 +87,35 @@ This project is a comprehensive and efficient Brain Stroke and Tumor Detection S
 <details>
   <summary><b>CNN Architecture</b></summary>
   
-  <p>Data Distribution</p>
+  <p>Data Distribution:</p>
   <img src="stats_images/distrCNN.png" alt="drawing" width="500"/>
 
-  <p>Accuracy VS Epoch</p>
+  <p>Accuracy VS Epoch:</p>
   <img src="stats_images/accuracyVSepoch.png" alt="drawing" width="500"/>
 
-  <p>Loss VS Epoch</p>
+  <p>Loss VS Epoch:</p>
   <img src="stats_images/LossVSEpoch.png" alt="drawing" width="500"/>
 </details>
 
 <details>
   <summary><b>U-Net Architecture</b></summary> 
-    <p>Data Distribution</p>
+    <p>Data Distribution:</p>
     <img src="stats_images/distrU-net.png" alt="drawing" width="500"/>
 
-    <p>Accuracy Graph</p>
+    <p>Accuracy Graph:</p>
     <img src="stats_images/accuracyU-net.png" alt="drawing" width="500"/>
 
-    <p>Predicted VS Original Segmentation</p> 
+    <p>Predicted VS Original Segmentation:</p> 
     <img src="stats_images/outputU-net.png" alt="drawing" width="500"/>
 </details>
 
-## Metrics
-Table or list summarizing the key evaluation metrics
-## Visualizations
-Brief descriptions of the visualizations included
-## Contributing
-Guidelines for contributing to the project
-### Step-by-Step Contribution Guide
-Detailed steps for contributing to the project
-## License
-Information about the license under which the project is released
 ## Contact
-### Author
+### Authors
 Your name and contact information
-### Project Link
-Link to the project repository or website
 ## Acknowledgments
 Acknowledgments for datasets, inspiration, or other forms of assistance
-Optional Headings (depending on the project's specific needs):
 
-## Future Work
-Plans for future development or enhancements
-## Known Issues
-List of known issues or limitations
-## Troubleshooting
-Tips for troubleshooting common problems
 ## References
-List of references used in the project (e.g., research papers, articles)
+- <a href='https://wseas.com/journals/bab/2023/a425108-017(2023).pdf'>Deep Learning based Brain Stroke Detection using VGGNet</a>
+- <a href='https://www.kaggle.com/code/noshintasnia/neurostrokenet-an-innovative-neural-architecture'>NeuroStrokeNet: An Innovative Neural Architecture</a>
+- 
