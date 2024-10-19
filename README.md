@@ -52,9 +52,9 @@ Illustrative examples of using your project
 
 ## Dataset
 ### Source
-- <a href="[https://readme.com/](https://www.kaggle.com/code/alphajr7/95-accuracy/input?select=brains_Stroke_final+-+brains_Stroke_final.csv)" target="_blank">Brain Stroke Dataset</a>
-- <a href="[[https://readme.com/](https://www.kaggle.com/code/alphajr7/95-accuracy/input?select=brains_Stroke_final+-+brains_Stroke_final.csv)](https://www.kaggle.com/datasets/noshintasnia/brain-stroke-prediction-ct-scan-image-dataset/data)" target="_blank">CT Scan Image Dataset</a>
-- <a href="[[https://readme.com/](https://www.kaggle.com/code/alphajr7/95-accuracy/input?select=brains_Stroke_final+-+brains_Stroke_final.csv)](https://www.kaggle.com/datasets/awsaf49/brats2020-training-data)" target="_blank">BRATS 2020 Training Data</a>
+- <a href="https://www.kaggle.com/code/alphajr7/95-accuracy/input?select=brains_Stroke_final+-+brains_Stroke_final.csv" target="_blank">Brain Stroke Dataset</a>
+- <a href="https://www.kaggle.com/datasets/noshintasnia/brain-stroke-prediction-ct-scan-image-dataset/data" target="_blank">CT Scan Image Dataset</a>
+- <a href="https://www.kaggle.com/datasets/awsaf49/brats2020-training-data" target="_blank">BRATS 2020 Training Data</a>
   
 ### Features of the MLP Dataset
 - Gender: This feature may influence stroke risk factors and outcomes.
