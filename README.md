@@ -96,11 +96,24 @@ Illustrative examples of using your project
 <img src="stats_images/ROC-AUC.png" alt="drawing" width="500"/>
 
 ### CNN Architecture -
+### Data Distribution
+<img src="stats_images/distrCNN.png" alt="drawing" width="500"/>
+
 ### Accuracy VS Epoch
 <img src="stats_images/accuracyVSepoch.png" alt="drawing" width="500"/>
 
 ### Loss VS Epoch
 <img src="stats_images/LossVSEpoch.png" alt="drawing" width="500"/>
+
+### U-Net Architecture 
+### Data Distribution
+<img src="stats_images/distrU-net.png" alt="drawing" width="500"/>
+
+### Accuracy Graph
+<img src="stats_images/accuracyU-net.png" alt="drawing" width="500"/>
+
+### Predicted VS Original Segmentation 
+<img src="stats_images/outputU-net.png" alt="drawing" width="500"/>
 
 ## Metrics
 Table or list summarizing the key evaluation metrics
