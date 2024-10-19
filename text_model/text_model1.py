@@ -12,3 +12,5 @@ def predict(data):
     # Make prediction
     prediction = model.predict(scaled_data)
     return prediction
+
+__all__ = ['predict']

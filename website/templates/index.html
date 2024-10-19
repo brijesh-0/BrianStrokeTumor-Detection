@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Data Input Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Health Data Input</h1>
+        <form id="health-form">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select...</option>
+                <option value=0>Male</option>
+                <option value=1>Female</option>
+                <option value=2>Other</option>
+            </select>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required min="0">
+
+            <label for="hypertension">Hypertension:</label>
+            <select id="hypertension" name="hypertension" required>
+                <option value="">Select...</option>
+                <option value=0>No</option>
+                <option value=1>Yes</option>
+            </select>
+
+            <label for="heart_disease">Heart Disease:</label>
+            <select id="heart_disease" name="heart_disease" required>
+                <option value="">Select...</option>
+                <option value=0>No</option>
+                <option value=1>Yes</option>
+            </select>
+
+            <label for="ever_married">Ever Married:</label>
+            <select id="ever_married" name="ever_married" required>
+                <option value="">Select...</option>
+                <option value=0>No</option>
+                <option value=1>Yes</option>
+            </select>
+
+            <label for="work_type">Work Type:</label>
+            <select id="work_type" name="work_type" required>
+                <option value="">Select...</option>
+                <option value=0>Private</option>
+                <option value=1>Government</option>
+                <option value=2>Self-employed</option>
+                <option value=3>Children</option>
+                <option value=4>Never Worked</option>
+            </select>
+
+            <label for="Residence_type">Residence Type:</label>
+            <select id="Residence_type" name="Residence_type" required>
+                <option value="">Select...</option>
+                <option value=1>Urban</option>
+                <option value=0>Rural</option>
+            </select>
+
+            <label for="avg_glucose_level">Average Glucose Level:</label>
+            <input type="number" id="avg_glucose_level" name="avg_glucose_level" required step="0.01" min="0">
+
+            <label for="bmi">BMI:</label>
+            <input type="number" id="bmi" name="bmi" required step="0.01" min="0">
+
+            <label for="smoking_status">Smoking Status:</label>
+            <select id="smoking_status" name="smoking_status" required>
+                <option value="">Select...</option>
+                <option value=0>Never Smoked</option>
+                <option value=1>Smokes</option>
+                <option value=2>Formerly Smoked</option>
+            </select>
+
+            <label for="image_upload">Upload Image:</label>
+            <input type="file" id="image_upload" name="image_upload" accept="image/*" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
