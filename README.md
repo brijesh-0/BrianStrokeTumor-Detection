@@ -12,10 +12,10 @@ This project is a comprehensive and efficient Brain Stroke and Tumor Detection S
 ## Key Features
 ### Brain Stroke Detection 
 - **Enhanced MLP Neural Network:** Utilizes a Multi-Layer Perceptron (MLP) model to predict the likelihood of a brain stroke based on various input features.
-- **Classification of Brain Stroke:** Implements a Convolutional Neural Network (CNN) to analyze MRI/CT images and classify brain strokes as either **ischemic** or **hemorrhagic**.
+- **Classification of Brain Stroke:** Implements a Convolutional Neural Network (CNN) to analyze MRI/CT images and classify brain strokes as either **ischemic** or **hemorrhagic** once predicted.
   
 ### Brain Tumor Detection and Segmentation 
-- U-Net Model for Segmentation: Employs a U-Net architecture to segment brain tumors in medical images. This model is specifically trained to identify and classify the following features:
+- **U-Net Model for Segmentation:** Employs a U-Net architecture to segment brain tumors in medical images. This model is specifically trained to identify and classify the following features:
     - **No Tumor:** Indicates the absence of any tumor.
     - **Necrotic/Core:** Represents dead or dying tissue within a tumor, suggesting advanced tumor progression.
     - **Edema:** Detects swelling caused by excess fluid around the tumor, which can indicate the tumor's impact on surrounding brain tissue.
@@ -29,32 +29,24 @@ This project is a comprehensive and efficient Brain Stroke and Tumor Detection S
 - **Predictive Analysis:** Provides predictions on stroke likelihood based on user-input features, aiding in early diagnosis.
 - **Tumor Feature Identification:** Helps in identifying specific tumor characteristics, which can guide treatment decisions.
   
-Technologies used - 
+**Technologies used -** 
  - Frontend: HTML, CSS, JavaScript
  - Backend: Python, Flask
  - Machine Learning: NumPy, Pandas, scikit-learn, TensorFlow or Keras
  - Deep Learning: Convolutional Neural Networks (CNN), U-Net architecture, Multi-Layer Perceptron (MLP)
  - Data Visualization: Matplotlib 
 
-## Getting Started
-### Installation
-Step-by-step installation instructions
-### Setup
-Any additional setup required (e.g., environment variables)
-
-## Usage
-### Training
-Instructions for training the model
-### Prediction
-Instructions for making predictions with the trained model
-### Example Use Cases
-Illustrative examples of using your project
-
 ## Dataset
-### Source
+### Sources
 - <a href="https://www.kaggle.com/code/alphajr7/95-accuracy/input?select=brains_Stroke_final+-+brains_Stroke_final.csv" target="_blank">Brain Stroke Dataset</a>
 - <a href="https://www.kaggle.com/datasets/noshintasnia/brain-stroke-prediction-ct-scan-image-dataset/data" target="_blank">CT Scan Image Dataset</a>
 - <a href="https://www.kaggle.com/datasets/awsaf49/brats2020-training-data" target="_blank">BRATS 2020 Training Data</a>
+- <a href='https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/44RCPZ'>Replication Data for: Prediction of Cerebral Stroke</a>
+
+### Pre-Processing
+- **Data Augmentation** was performed on MRI Scans in order to prevent overfitting and and memoization.
+- **Rescaling** and **Resize** was performed for better segmentations.
+- **Normalization** was performed for faster convergence and reduced risk of Exploding/Vanishing Gradients.
  
 ## Model Performance
 ### Evaluation Metrics
@@ -76,69 +68,64 @@ Illustrative examples of using your project
 - Validation Loss: 0.0136
   
 **CNN Architecture:**
-- Accuracy: 98.1%
+- Test Accuracy: 98.1%
 - Test Loss: 0.627
   
 **U-Net Architecture:**
+- Test Accuracy: 99.26%
 - Precision: 99.4%
 - Specificity: 99.79%
 - Sensitivity: 99.04%
   
 ## Model Evaluation and Visualizations
-### Multi-Layer Perceptron (MLP) - 
-### Confusion Matrix
-<img src="stats_images/confusion_matrix.png" alt="drawing" width="500"/>
+<details>
+  <summary><b>Multi-Layer Perceptron (MLP)</b></summary>
+  
+  <p>Confusion Matrix:</p>
+  <img src="stats_images/confusion_matrix.png" alt="drawing" width="500"/>
 
-### Precision-Recall Curve
-<img src="stats_images/precision_recall.png" alt="drawing" width="500"/>
+  <p>Precision-Recall Curve:</p>
+  <img src="stats_images/precision_recall.png" alt="drawing" width="500"/>
 
-### ROC-AUC Curve:
-<img src="stats_images/ROC-AUC.png" alt="drawing" width="500"/>
+  <p>ROC-AUC Curve:</p>
+  <img src="stats_images/ROC-AUC.png" alt="drawing" width="500"/>
+</details>
 
-### CNN Architecture -
-### Data Distribution
-<img src="stats_images/distrCNN.png" alt="drawing" width="500"/>
+<details>
+  <summary><b>CNN Architecture</b></summary>
+  
+  <p>Data Distribution:</p>
+  <img src="stats_images/distrCNN.png" alt="drawing" width="500"/>
 
-### Accuracy VS Epoch
-<img src="stats_images/accuracyVSepoch.png" alt="drawing" width="500"/>
+  <p>Accuracy VS Epoch:</p>
+  <img src="stats_images/accuracyVSepoch.png" alt="drawing" width="500"/>
 
-### Loss VS Epoch
-<img src="stats_images/LossVSEpoch.png" alt="drawing" width="500"/>
+  <p>Loss VS Epoch:</p>
+  <img src="stats_images/LossVSEpoch.png" alt="drawing" width="500"/>
+</details>
 
-### U-Net Architecture 
-### Data Distribution
-<img src="stats_images/distrU-net.png" alt="drawing" width="500"/>
+<details>
+  <summary><b>U-Net Architecture</b></summary>
+  <p>Data Distribution:</p>
+  <img src="stats_images/distrU-net.png" alt="drawing" width="500" />
 
-### Accuracy Graph
-<img src="stats_images/accuracyU-net.png" alt="drawing" width="500"/>
+  <p>Accuracy Graph:</p>
+  <img src="stats_images/accuracyU-net.png" alt="drawing" width="500"/>
 
-### Predicted VS Original Segmentation 
-<img src="stats_images/outputU-net.png" alt="drawing" width="500"/>
+  <p>Predicted VS Original Segmentation:</p>
+  <img src="stats_images/outputU-net.png" alt="drawing" width="500"/>
+  
+</details>
 
-## Metrics
-Table or list summarizing the key evaluation metrics
-## Visualizations
-Brief descriptions of the visualizations included
-## Contributing
-Guidelines for contributing to the project
-### Step-by-Step Contribution Guide
-Detailed steps for contributing to the project
-## License
-Information about the license under which the project is released
 ## Contact
-### Author
-Your name and contact information
-### Project Link
-Link to the project repository or website
-## Acknowledgments
-Acknowledgments for datasets, inspiration, or other forms of assistance
-Optional Headings (depending on the project's specific needs):
+### Authors
+- Avyukth Inna
+- Ayman Khan
+- Brijesh S G
+- Samraat Dabolay
 
-## Future Work
-Plans for future development or enhancements
-## Known Issues
-List of known issues or limitations
-## Troubleshooting
-Tips for troubleshooting common problems
 ## References
-List of references used in the project (e.g., research papers, articles)
+- <a href='https://wseas.com/journals/bab/2023/a425108-017(2023).pdf'>Deep Learning based Brain Stroke Detection using VGGNet</a>
+- <a href='https://www.kaggle.com/code/noshintasnia/neurostrokenet-an-innovative-neural-architecture'>NeuroStrokeNet: An Innovative Neural Architecture</a>
+- <a href='https://paperswithcode.com/paper/u-net-convolutional-networks-for-biomedical'>U-Net: Convolutional Networks for Biomedical Image Segmentation</a>
+- <a href='https://www.kaggle.com/code/alphajr7/95-accuracy/notebook'>Kaggle NoteBook</a>
