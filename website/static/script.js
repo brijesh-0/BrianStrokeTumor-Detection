@@ -3,7 +3,7 @@ document.getElementById('health-form').addEventListener('submit', function(event
 
     const formData = new FormData(event.target);
     
-    fetch('http://localhost:5000/submit', {
+    fetch('http://localhost:5000/BrainStrokePredict', {
         method: 'POST',
         body: formData
     })
@@ -19,8 +19,9 @@ document.getElementById('health-form').addEventListener('submit', function(event
         resultDiv.className = 'result';
         resultDiv.innerHTML = `
             <h2>Prediction Result</h2>
-            <p>${JSON.stringify(data.prediction)}</p>
+            <p>${data.prediction}</p>
             <p>${data.message}</p>
+            <a href="/BrainStrokeImageForm"><button class="button">Upload CT Scan</button></a>
         `;
         
         // Append the result to the container

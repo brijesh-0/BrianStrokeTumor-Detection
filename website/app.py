@@ -13,10 +13,16 @@ CORS(app)
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('landing.html')
 
-@app.route('/submit', methods=['POST'])
-def submit():
+# Returns the form page
+@app.route('/BrainStrokeForm')
+def BrainStrokeForm():
+    return render_template('BrainStrokeForm.html')
+
+# Form submit button calls this
+@app.route('/BrainStrokePredict', methods=['POST'])
+def BrainStrokePredict():
     # Extract data from the request
     gender = int(request.form.get('gender'))  # Convert gender to int
     age = int(request.form.get('age'))  # Age as int
@@ -46,6 +52,34 @@ def submit():
         message += "You Have Brain Stroke"
 
     return jsonify({"prediction": message, "message": "Data received successfully!"}), 200
+
+@app.route('/BrainStrokeImageForm')
+def BrainStrokeImageForm():
+    return render_template('BrainStrokeImageForm.html')
+    
+
+@app.route('/BrainStrokeImageResult', methods=['POST'])
+def BrainStrokeImageResult():
+    if 'image' not in request.files:
+        return jsonify({"prediction": "No image uploaded."}), 400
+
+    image_file = request.files['image']
+    
+    # Save the image to the 'upload' folder
+    upload_folder = 'upload'
+    os.makedirs(upload_folder, exist_ok=True)  # Create folder if it doesn't exist
+    image_path = os.path.join(upload_folder, image_file.filename)
+    image_file.save(image_path)
+
+    # Process the image and make a prediction
+    #prediction = your_prediction_function(image_path)  # Replace with your model's prediction logic
+
+    return jsonify({"prediction": "Dummy baka"})
+
+
+@app.route('/BrainTumorForm')
+def BrainTumorForm():
+    return render_template('/BrainTumorForm.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

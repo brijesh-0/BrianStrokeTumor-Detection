@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Stroke Image Upload</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        input[type="file"] {
+            margin-bottom: 20px;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: green;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Brain Stroke Image</h1>
+        <form id="brain-stroke-image-form" enctype="multipart/form-data">
+            <label for="image_upload">Upload Image:</label>
+            <input type="file" id="image_upload" name="image" accept="image/*" required>
+            <button type="submit">Upload</button>
+        </form>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        document.getElementById('brain-stroke-image-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            const formData = new FormData(event.target);
+            
+            fetch('/BrainStrokeImageResult', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json()) // Expecting JSON response
+            .then(data => {
+                // Hide the form and display the result
+                document.getElementById('brain-stroke-image-form').classList.add('hidden');
+                document.getElementById('result').innerText = data.prediction; // Display prediction result
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById('result').innerText = "An error occurred while processing the image.";
+            });
+        });
+    </script>
+</body>
+</html>
