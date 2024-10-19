@@ -41,6 +41,7 @@ This project is a comprehensive and efficient Brain Stroke and Tumor Detection S
 - <a href="https://www.kaggle.com/code/alphajr7/95-accuracy/input?select=brains_Stroke_final+-+brains_Stroke_final.csv" target="_blank">Brain Stroke Dataset</a>
 - <a href="https://www.kaggle.com/datasets/noshintasnia/brain-stroke-prediction-ct-scan-image-dataset/data" target="_blank">CT Scan Image Dataset</a>
 - <a href="https://www.kaggle.com/datasets/awsaf49/brats2020-training-data" target="_blank">BRATS 2020 Training Data</a>
+- <a href='https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/44RCPZ'>Replication Data for: Prediction of Cerebral Stroke</a>
  
 ## Model Performance
 ### Evaluation Metrics
@@ -112,11 +113,13 @@ This project is a comprehensive and efficient Brain Stroke and Tumor Detection S
 
 ## Contact
 ### Authors
-
-## Acknowledgments
-Acknowledgments for datasets, inspiration, or other forms of assistance
+- Avyukth Inna
+- Ayman Khan
+- Brijesh S G
+- Samraat Dabolay
 
 ## References
 - <a href='https://wseas.com/journals/bab/2023/a425108-017(2023).pdf'>Deep Learning based Brain Stroke Detection using VGGNet</a>
 - <a href='https://www.kaggle.com/code/noshintasnia/neurostrokenet-an-innovative-neural-architecture'>NeuroStrokeNet: An Innovative Neural Architecture</a>
-- 
+- <a href='https://paperswithcode.com/paper/u-net-convolutional-networks-for-biomedical'>U-Net: Convolutional Networks for Biomedical Image Segmentation</a>
+- <a href='https://www.kaggle.com/code/alphajr7/95-accuracy/notebook'>Kaggle NoteBook</a>
