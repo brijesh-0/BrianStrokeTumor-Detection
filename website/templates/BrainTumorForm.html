@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Upload</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <style>
         body {
             display: flex;
@@ -33,9 +33,9 @@
     </style>
 </head>
 <body>
-    <h1>Upload Image</h1>
+    <h1>Upload Images</h1>
     <form id="image-upload-form" enctype="multipart/form-data">
-        <input type="file" name="image" accept="image/*" required>
+        <input type="file" name="image" accept="image/*" multiple required>
         <button type="submit">Upload</button>
     </form>
     
@@ -46,7 +46,7 @@
             event.preventDefault();
             const formData = new FormData(event.target);
             
-            fetch('/upload', {
+            fetch('/BrainTumorUpload', {
                 method: 'POST',
                 body: formData
             })
@@ -57,14 +57,14 @@
 
                 data.images.forEach(imageUrl => {
                     const img = document.createElement('img');
-                    img.src = imageUrl;
+                    img.src = `static/${imageUrl}`; // Ensure the path is correct
                     imageContainer.appendChild(img);
                 });
             })
             .catch(error => {
                 console.error('Error:', error);
             });
-        });
+    });
     </script>
 </body>
 </html>
