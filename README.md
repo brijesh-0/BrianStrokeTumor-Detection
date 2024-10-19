@@ -73,13 +73,13 @@ This project is a comprehensive and efficient Brain Stroke and Tumor Detection S
 ## Model Evaluation and Visualizations
 <details>
   <summary>Multi-Layer Perceptron (MLP) - </summary>
-  <b>Confusion Matrix:</b>
+  <p>Confusion Matrix:</p>
   <img src="stats_images/confusion_matrix.png" alt="drawing" width="500"/>
 
-  <b>Precision-Recall Curve:</b>
+  <p>Precision-Recall Curve:</p>
   <img src="stats_images/precision_recall.png" alt="drawing" width="500"/>
 
-  <b>ROC-AUC Curve:</b>
+  <p>ROC-AUC Curve:</p>
   <img src="stats_images/ROC-AUC.png" alt="drawing" width="500"/>
 </details>
 
