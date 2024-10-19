@@ -55,11 +55,12 @@ def BrainStrokePredict():
 
     return jsonify({"prediction": message, "message": "Data received successfully!"}), 200
 
+# Image Form
 @app.route('/BrainStrokeImageForm')
 def BrainStrokeImageForm():
     return render_template('BrainStrokeImageForm.html')
     
-
+# API called for prediction
 @app.route('/BrainStrokeImageResult', methods=['POST'])
 def BrainStrokeImageResult():
     if 'image' not in request.files:
@@ -83,7 +84,7 @@ def BrainStrokeImageResult():
     print(f"This is the {prediction}")
     return jsonify({"prediction": prediction})
 
-
+# Form file foe BrainTumor
 @app.route('/BrainTumorForm')
 def BrainTumorForm():
     return render_template('/BrainTumorForm.html')
