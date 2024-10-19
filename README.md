@@ -102,10 +102,10 @@ This project is a comprehensive and efficient Brain Stroke and Tumor Detection S
     <p>Data Distribution:</p>
     <img src="stats_images/distrU-net.png" alt="drawing" width="500"/>
 
-    <p>Accuracy Graph:</p>
+    Accuracy Graph:
     <img src="stats_images/accuracyU-net.png" alt="drawing" width="500"/>
 
-    <p>Predicted VS Original Segmentation:</p> 
+    Predicted VS Original Segmentation:
     <img src="stats_images/outputU-net.png" alt="drawing" width="500"/>
 </details>
 
