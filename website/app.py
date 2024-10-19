@@ -2,11 +2,13 @@ from flask import Flask, render_template, request, jsonify
 import os
 import sys
 from flask_cors import CORS
+import numpy as np
 
 # Add the parent directory to the Python path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from text_model.text_model1 import predict
+from image_models.Brain_Stroke_CNN.predict import CNN_Model
 
 app = Flask(__name__)
 CORS(app)
@@ -72,9 +74,14 @@ def BrainStrokeImageResult():
     image_file.save(image_path)
 
     # Process the image and make a prediction
-    #prediction = your_prediction_function(image_path)  # Replace with your model's prediction logic
+    prediction = CNN_Model(image_path)  # Replace with your model's prediction logic
 
-    return jsonify({"prediction": "Dummy baka"})
+    # Convert prediction to a serializable type
+    # if isinstance(prediction, np.int64):
+    #     prediction = int(prediction)  # Convert to a standard Python int
+
+    print(f"This is the {prediction}")
+    return jsonify({"prediction": prediction})
 
 
 @app.route('/BrainTumorForm')

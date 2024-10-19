@@ -52,9 +52,18 @@
             })
             .then(response => response.json()) // Expecting JSON response
             .then(data => {
+
+            resultt = ''
+            if(data.prediction == 0) {
+                resultt += 'hemorrhagic';
+            }
+            if(data.prediction == 1) {
+                resultt += 'ischaemic';
+            }
+            console.log(data.prediction, resultt);
                 // Hide the form and display the result
                 document.getElementById('brain-stroke-image-form').classList.add('hidden');
-                document.getElementById('result').innerText = data.prediction; // Display prediction result
+                document.getElementById('result').innerText = resultt; // Display prediction result
             })
             .catch(error => {
                 console.error('Error:', error);
