@@ -72,7 +72,8 @@ This project is a comprehensive and efficient Brain Stroke and Tumor Detection S
   
 ## Model Evaluation and Visualizations
 <details>
-  <summary>Multi-Layer Perceptron (MLP) - </summary>
+  <summary><b>Multi-Layer Perceptron (MLP)</b></summary>
+  
   <p>Confusion Matrix:</p>
   <img src="stats_images/confusion_matrix.png" alt="drawing" width="500"/>
 
@@ -83,14 +84,16 @@ This project is a comprehensive and efficient Brain Stroke and Tumor Detection S
   <img src="stats_images/ROC-AUC.png" alt="drawing" width="500"/>
 </details>
 
-### CNN Architecture -
-### Data Distribution
-<img src="stats_images/distrCNN.png" alt="drawing" width="500"/>
+<details>
+  <summary>CNN Architecture</summary>
+  
+  <p>Data Distribution</p>
+  <img src="stats_images/distrCNN.png" alt="drawing" width="500"/>
 
-### Accuracy VS Epoch
-<img src="stats_images/accuracyVSepoch.png" alt="drawing" width="500"/>
+  <p>Accuracy VS Epoch</p>
+  <img src="stats_images/accuracyVSepoch.png" alt="drawing" width="500"/>
 
-### Loss VS Epoch
+<p>Loss VS Epoch</p>
 <img src="stats_images/LossVSEpoch.png" alt="drawing" width="500"/>
 
 ### U-Net Architecture 
