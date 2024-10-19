@@ -12,7 +12,7 @@ This project is a comprehensive and efficient Brain Stroke and Tumor Detection S
 ## Key Features
 ### Brain Stroke Detection 
 - **Enhanced MLP Neural Network:** Utilizes a Multi-Layer Perceptron (MLP) model to predict the likelihood of a brain stroke based on various input features.
-- **Classification of Brain Stroke:** Implements a Convolutional Neural Network (CNN) to analyze MRI/CT images and classify brain strokes as either **ischemic** or **hemorrhagic**.
+- **Classification of Brain Stroke:** Implements a Convolutional Neural Network (CNN) to analyze MRI/CT images and classify brain strokes as either **ischemic** or **hemorrhagic** once predicted.
   
 ### Brain Tumor Detection and Segmentation 
 - **U-Net Model for Segmentation:** Employs a U-Net architecture to segment brain tumors in medical images. This model is specifically trained to identify and classify the following features:
@@ -42,6 +42,11 @@ This project is a comprehensive and efficient Brain Stroke and Tumor Detection S
 - <a href="https://www.kaggle.com/datasets/noshintasnia/brain-stroke-prediction-ct-scan-image-dataset/data" target="_blank">CT Scan Image Dataset</a>
 - <a href="https://www.kaggle.com/datasets/awsaf49/brats2020-training-data" target="_blank">BRATS 2020 Training Data</a>
 - <a href='https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/44RCPZ'>Replication Data for: Prediction of Cerebral Stroke</a>
+
+### Pre-Processing
+- **Data Augmentation** was performed on MRI Scans in order to prevent overfitting and and memoization.
+- **Rescaling** and **Resize** was performed for better segmentations.
+- **Normalization** was performed for faster convergence and reduced risk of Exploding/Vanishing Gradients.
  
 ## Model Performance
 ### Evaluation Metrics
