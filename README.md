@@ -86,13 +86,13 @@ Illustrative examples of using your project
   
 ## Model Evaluation and Visualizations
 ### Confusion Matrix
-![](stats_images/confusion_matrix.png)
+<img src="stats_images/confusion_matrix.png" alt="drawing" width="200"/>
 
 ### Precision-Recall Curve
-![](stats_images/precision_recall.png)
+<img src="stats_images/precision_recall.png" alt="drawing" width="200"/>
 
 ### ROC-AUC Curve:
-![](stats_images/ROC-AUC.png)
+<img src="stats_images/ROC-AUC.png" alt="drawing" width="200"/>
 
 ## Metrics
 Table or list summarizing the key evaluation metrics
