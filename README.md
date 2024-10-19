@@ -85,14 +85,22 @@ Illustrative examples of using your project
 - Sensitivity: 99.04%
   
 ## Model Evaluation and Visualizations
+### Multi-Layer Perceptron (MLP) - 
 ### Confusion Matrix
-<img src="stats_images/confusion_matrix.png" alt="drawing" width="200"/>
+<img src="stats_images/confusion_matrix.png" alt="drawing" width="500"/>
 
 ### Precision-Recall Curve
-<img src="stats_images/precision_recall.png" alt="drawing" width="200"/>
+<img src="stats_images/precision_recall.png" alt="drawing" width="500"/>
 
 ### ROC-AUC Curve:
-<img src="stats_images/ROC-AUC.png" alt="drawing" width="200"/>
+<img src="stats_images/ROC-AUC.png" alt="drawing" width="500"/>
+
+### CNN Architecture -
+### Accuracy VS Epoch
+<img src="stats_images/accuracyVSepoch.png" alt="drawing" width="500"/>
+
+### Loss VS Epoch
+<img src="stats_images/LossVSEpoch.png" alt="drawing" width="500"/>
 
 ## Metrics
 Table or list summarizing the key evaluation metrics
