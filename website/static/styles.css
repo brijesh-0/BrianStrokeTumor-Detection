@@ -15,6 +15,20 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+.image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: 70%;
+    height: auto;
+    margin: 10px;
+}
+
 h1 {
     text-align: center;
     color: #333;

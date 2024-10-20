@@ -21,13 +21,15 @@
             margin-bottom: 20px;
         }
         .image-container {
+            width: 100%;
             display: flex;
+            justify-content: center;
             flex-wrap: wrap;
             margin-top: 20px;
         }
         .image-container img {
-            width: 150px;
-            height: auto;
+            width: 700px;
+            height: 50px;
             margin: 10px;
         }
     </style>
@@ -58,6 +60,8 @@
                 data.images.forEach(imageUrl => {
                     const img = document.createElement('img');
                     img.src = `static/${imageUrl}`; // Ensure the path is correct
+                    img.style.width = '70%'
+                    img.style.height = 'auto'
                     imageContainer.appendChild(img);
                 });
             })

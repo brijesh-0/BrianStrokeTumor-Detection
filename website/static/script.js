@@ -20,12 +20,18 @@ document.getElementById('health-form').addEventListener('submit', function(event
         resultDiv.innerHTML = `
             <h2>Prediction Result</h2>
             <p>${data.prediction}</p>
-            <p>${data.message}</p>
-            <a href="/BrainStrokeImageForm"><button class="button">Upload CT Scan</button></a>
         `;
         
         // Append the result to the container
         document.querySelector('.container').appendChild(resultDiv);
+
+        // Check if prediction is 1 and show the upload button
+        if (data.prediction == "Person is at risk of Brain Stroke") {
+            const uploadButton = document.createElement('a');
+            uploadButton.href = "/BrainStrokeImageForm"; // Update to your actual upload page
+            uploadButton.innerHTML = '<button class="button">Upload CT Scan</button>';
+            resultDiv.appendChild(uploadButton);
+        }
     })
     .catch(error => {
         console.error('Error:', error);

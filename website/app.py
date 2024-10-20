@@ -11,6 +11,7 @@ from text_model.text_model1 import predict
 from image_models.Brain_Stroke_CNN.predict import CNN_Model
 from image_models.brain_tumor_model.brain_tumor_flask import runner # show_predicted_segmentations
 # from image_models.brain_tumor_model.brain_tumor_flask import showPredictsById
+from text_model.text_model2 import runner3
 
 
 app = Flask(__name__)
@@ -48,13 +49,15 @@ def BrainStrokePredict():
     ]
 
     # Call the predict function
-    prediction = predict(data)
-    print(prediction)
+    # prediction = predict(data)
+    prediction = runner3(data)
+    # print(f"Final Predicted Probability: {predicted_probability:.4f}")
+    # print(prediction)
     message = ''
     if prediction == 0:
-        message += "You don't Have Brain Stroke"
+        message += "Person is not at risk of Brain Stroke"
     else:
-        message += "You Have Brain Stroke"
+        message += "Person is at risk of Brain Stroke"
 
     return jsonify({"prediction": message, "message": "Data received successfully!"}), 200
 
